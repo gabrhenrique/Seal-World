@@ -1,0 +1,68 @@
+
+:root {
+    --black: #000;
+    --bg-black: #101010;
+    --white: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 300;
+    color: var(--white);
+}
+
+body {
+    background-color: var(--bg-black) !important;
+}
+
+header {
+    position: relative;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+  
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+  
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header h1 {
+    font-size: 5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+}
+  
+header .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--black);
+    opacity: 0.5;
+    z-index: 1;
+}
