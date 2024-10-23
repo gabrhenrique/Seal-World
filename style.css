@@ -2,6 +2,7 @@
 :root {
     --black: #000;
     --bg-black: #101010;
+    --bg-black2: #1B1B1B;
     --white: #FFF;
 }
 
@@ -20,12 +21,22 @@ body {
 
 header {
     position: relative;
-    height: 75vh;
+    height: 100vh;
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
 }
-  
+
+header:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    height: 50%;
+    bottom: 0px;
+    background: linear-gradient(180deg, rgba(204, 255, 0, 0) 0%, rgba(10,10,10,1) 100%);
+}
+
 header video {
     position: absolute;
     top: 50%;
@@ -65,4 +76,20 @@ header .overlay {
     background-color: var(--black);
     opacity: 0.5;
     z-index: 1;
+}
+
+.card-top {
+    margin: 5rem auto;
+    background-color: var(--bg-black2);
+    width: 1024px;
+    border-radius: 1rem;
+}
+
+.card-top img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.card-top p {
+    padding: 1rem;
 }
